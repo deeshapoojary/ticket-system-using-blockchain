@@ -1,0 +1,188 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Starting a New Journey",
+    "body": "The beginning of something new often brings excitement, challenges, and endless possibilities."
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "Finding Purpose in Life",
+    "body": "Each moment leads us closer to discovering who we truly are and what we stand for in the grand scheme of life."
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "Overcoming Obstacles",
+    "body": "Challenges are a part of growth. Every hurdle is an opportunity to become stronger and wiser."
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "The Path to Success",
+    "body": "Success is not a destination but a journey that is filled with hard work, dedication, and perseverance."
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "Embracing Change",
+    "body": "Change is inevitable, but how we respond to it defines the outcomes and our future."
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "The Power of Persistence",
+    "body": "Persistence is key in achieving long-term goals. Keep pushing forward even when the road gets tough."
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "title": "Finding Joy in Simplicity",
+    "body": "True happiness often lies in the simple moments of life—those moments of calm, peace, and contentment."
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "title": "Building Strong Connections",
+    "body": "Meaningful relationships enrich our lives, offering us support, understanding, and shared experiences."
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "title": "The Value of Integrity",
+    "body": "Integrity is the foundation of trust. It allows us to build authentic relationships with others."
+  },
+  {
+    "userId": 1,
+    "id": 10,
+    "title": "Facing Difficult Decisions",
+    "body": "Life often presents us with tough choices. It is our courage to decide that shapes our destiny."
+  },
+  {
+    "userId": 2,
+    "id": 11,
+    "title": "Appreciating the Little Things",
+    "body": "In the hustle of daily life, it's important to take a step back and appreciate the little things around us."
+  },
+  {
+    "userId": 2,
+    "id": 12,
+    "title": "The Beauty of Nature",
+    "body": "Nature offers endless inspiration and peace. It's a reminder of the world's beauty that we often overlook."
+  },
+  {
+    "userId": 2,
+    "id": 13,
+    "title": "Building a Brighter Future",
+    "body": "Each day is an opportunity to work towards a better tomorrow for ourselves and future generations."
+  },
+  {
+    "userId": 2,
+    "id": 14,
+    "title": "Discovering Your Passion",
+    "body": "Your passion is what fuels your dreams and ambitions. It gives your life a unique sense of purpose."
+  },
+  {
+    "userId": 2,
+    "id": 15,
+    "title": "Strength in Adversity",
+    "body": "Adversity is not the end—it's an opportunity to rise, to grow stronger, and to prove your resilience."
+  },
+  {
+    "userId": 2,
+    "id": 16,
+    "title": "Living with Gratitude",
+    "body": "Gratitude transforms our perspective, helping us find joy in what we have instead of longing for what we lack."
+  },
+  {
+    "userId": 2,
+    "id": 17,
+    "title": "The Art of Letting Go",
+    "body": "Sometimes, the best thing you can do is let go of what weighs you down and move forward with hope."
+  },
+  {
+    "userId": 2,
+    "id": 18,
+    "title": "Finding Balance in Life",
+    "body": "Balancing work, relationships, and self-care is essential for a fulfilling and happy life."
+  },
+  {
+    "userId": 2,
+    "id": 19,
+    "title": "Chasing Dreams",
+    "body": "Dreams are what drive us to push boundaries and explore new possibilities. Keep chasing them."
+  },
+  {
+    "userId": 2,
+    "id": 20,
+    "title": "The Strength of Community",
+    "body": "Communities bring us together, offering support, understanding, and a sense of belonging."
+  },
+  {
+    "userId": 3,
+    "id": 21,
+    "title": "Creating Your Own Path",
+    "body": "We each have a unique journey in life. It's important to create your own path and follow it with confidence."
+  },
+  {
+    "userId": 3,
+    "id": 22,
+    "title": "Learning from Failure",
+    "body": "Failure is not the opposite of success, but a part of it. Every failure is a stepping stone to something greater."
+  },
+  {
+    "userId": 3,
+    "id": 23,
+    "title": "Living with Purpose",
+    "body": "Purpose gives life meaning. When you live with purpose, every action has significance."
+  },
+  {
+    "userId": 3,
+    "id": 24,
+    "title": "Embracing Challenges",
+    "body": "Challenges test our limits, but they also help us discover how far we can go when we believe in ourselves."
+  },
+  {
+    "userId": 3,
+    "id": 25,
+    "title": "Making a Difference",
+    "body": "You have the power to make a positive impact on others. Even small actions can create meaningful change."
+  },
+  {
+    "userId": 3,
+    "id": 26,
+    "title": "Finding Inner Strength",
+    "body": "True strength comes from within. It's about believing in yourself even when faced with tough times."
+  },
+  {
+    "userId": 3,
+    "id": 27,
+    "title": "Navigating Life's Transitions",
+    "body": "Transitions in life can be difficult, but they often lead to new opportunities and growth."
+  },
+  {
+    "userId": 3,
+    "id": 28,
+    "title": "Cherishing Memories",
+    "body": "Memories remind us of where we've been and the moments that have shaped us into who we are today."
+  },
+  {
+    "userId": 3,
+    "id": 29,
+    "title": "Fostering Creativity",
+    "body": "Creativity is a powerful tool that allows us to solve problems and express ourselves in unique ways."
+  },
+  {
+    "userId": 3,
+    "id": 30,
+    "title": "The Power of Imagination",
+    "body": "Imagination gives us the ability to dream big, think outside the box, and create a future filled with possibilities."
+  },
+  {
+    "userId": 4,
+    "id": 31,
+    "title": "The Journey of Self-Discovery",
+    "body": "Self-discovery is a lifelong process. Every experience teaches us something new about ourselves."
+  }
+]

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Ysabeau+SC:wght@800&display=swap");
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #070f2b; /* Changed to specified color */
+  overflow: auto;
+  padding-left: 3cm;
+  padding-right: 3cm;
+  z-index: -1;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cards {
+  padding-top: 3cm;
+  overflow: scroll;
+}
+
+.card {
+  overflow: scroll;
+  padding: 1em;
+  border: 1px solid #888;
+  color: white;
+  background: rgba(27, 26, 85, 0.75); /* Changed to #1B1A55 with transparency */
+  box-shadow: 0 8px 32px 0 rgba(83, 92, 145, 0.37); /* Adjusted shadow color */
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.grid {
+  max-width: 75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+
+.card:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.grid:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tile {
+  pointer-events: none;
+  font-family: "VT323";
+  font-size: 30px;
+  color: #ffffff; /* Changed text color to white */
+}
+
+.bodyu {
+  pointer-events: none;
+}
+
+.imageedit {
+  border-radius: 2em;
+  pointer-events: none;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(80%);
+  margin-top: 1.5em;
+  margin-left: 1em;
+  height: 16em;
+}
+
+/* Button styles */
+.button-54 {
+  font-family: "VT323";
+  font-size: 23px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff; /* Changed to white */
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  background-color: #535c91; /* Changed to specified color */
+  font-weight: bold;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.modal {
+  padding: 1em;
+  border: 1px solid #fff;
+  background: #1b1a55; /* Changed to specified color */
+  box-shadow: 0 8px 32px 0 rgba(83, 92, 145, 0.37); /* Adjusted shadow color */
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 35em;
+  width: 30em;
+  transition: opacity 500ms;
+  transition-delay: 1s;
+}
+
+.content {
+  transition: all 5s ease-in-out;
+  transition-delay: 1s;
+}
+
+.textEditor {
+  font-family: "VT323";
+  font-size: 1.5em;
+  color: #ffffff; /* Changed text color to white */
+}
+
+.gmailInput {
+  width: 20em;
+  height: 2em;
+  text-align: center;
+  background: #535c91; /* Changed to specified color */
+  box-shadow: 0 8px 32px 0 rgba(83, 92, 145, 0.37); /* Adjusted shadow color */
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 2em;
+  margin-left: 7em;
+  border-color: #9290c3; /* Changed border color */
+  border: 0em;
+}
+
+::placeholder {
+  color: white; /* Changed placeholder text color to white */
+  opacity: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#modal2 {
+  background: #1b1a55; /* Changed modal background */
+}
+
+.text2 {
+  font-family: "VT323";
+  font-size: x-large;
+  margin: 2em;
+  font-weight: bolder;
+  color: #ffffff; /* Changed text color to white */
+}
+
+#button2 {
+  margin-top: 3em;
+  margin-left: 6em;
+}
