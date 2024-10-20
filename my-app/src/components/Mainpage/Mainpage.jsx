@@ -1,14 +1,14 @@
 import React from "react";
 import "./Mainpage.css";
 import { useEffect, useState } from "react";
+import axios from "axios";
 import Popup from "reactjs-popup";
 import idGenerator from "../../contracts/idGenerator.json";
 import Web3 from "web3";
 import emailjs from "emailjs-com";
-import content from "./content.json"; // Correct import for JSON
 
 const Mainpage = () => {
-  const [myData, setMyData] = useState([]); // State to store content.json data
+  const [myData, setMyData] = useState([]);
   const [isError, setIsError] = useState("");
   const [imageSrc, setImageSrc] = useState([]);
   const [value2, setValue2] = useState("");
@@ -42,7 +42,6 @@ const Mainpage = () => {
       setValue2(e.target.value);
     }
   };
-
   useEffect(() => {
     const pass = { id: idd, email: value2 };
     console.log("pass:", pass);
@@ -66,11 +65,20 @@ const Mainpage = () => {
     console.log("Index:", selectedItemIndex);
   }, [selectedItemIndex]);
 
-  // Set JSON content data in state
+  // using Async Await
+  const getMyPostData = async () => {
+    try {
+      const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
+      setMyData(res.data); 
+    } catch (error) {
+      setIsError(error.message);
+    }
+  };
+
   useEffect(() => {
-    setMyData(content); // Directly setting the data from the imported content.json
+    getMyPostData();
     const images = [];
-    for (let i = 0; i < 15; i++) {
+    for (var i = 0; i < 15; i++) {
       images.push("https://picsum.photos/200/300?random=" + i);
     }
     setImageSrc(images);
@@ -92,7 +100,7 @@ const Mainpage = () => {
       .send({ from: "0x590139949260C8d8dFF828dC6804Ad2734685Ef6" });
 
     setUpdate(number);
-    // window.location.reload(); // Commented out to avoid page reloads
+    //window.location.reload();
   }
 
   useEffect(() => {
@@ -101,27 +109,17 @@ const Mainpage = () => {
     async function result() {
       try {
         const data = await contract.methods.id().call();
+
         console.log(parseInt(data));
         setId(parseInt(data));
       } catch (error) {
         console.log("Error fetching result:", error);
+        // Handle the error as needed
       }
     }
 
     contract && result();
   }, [update]);
-
-  // Function to export JSON data
-  const handleExportJSON = () => {
-    const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
-      JSON.stringify(myData)
-    )}`;
-    const link = document.createElement("a");
-    link.href = jsonString;
-    link.download = "content.json";
-
-    link.click();
-  };
 
   return (
     <div>
@@ -129,7 +127,7 @@ const Mainpage = () => {
         <div className="cards">
           <div className="grid">
             {images.map(({ url, index }) => {
-              const post = myData[index]; // Use data from content.json
+              const post = myData[index];
               if (!post) return null;
               const { title, body } = post;
               return (
@@ -137,7 +135,7 @@ const Mainpage = () => {
                   <img
                     className="imageedit"
                     src={url}
-                    alt="Random"
+                    alt="Girl in a jacket"
                     width="250"
                     height="250"
                   />
@@ -159,14 +157,15 @@ const Mainpage = () => {
                           <img
                             className="imageedit"
                             src={url}
-                            alt="Random"
+                            alt="Girl in a jacket"
                             width="250"
                             height="250"
                           />
-                          <p className="textEditor">GREAT PICK.</p>
+                          <p className="textEditor">GREAT PICK.</p> <b></b>
                           <p className="textEditor">
-                            <b>{title.slice(0, 15).toUpperCase()}</b> IS ONE OF
-                            THE BEST EVENTS WE GOT HERE
+                            {" "}
+                            <b>{title.slice(0, 15).toUpperCase()} </b>IS ONE OF
+                            THE BEST EVENT WE GOT HERE
                           </p>
                           <input
                             id="textInput1"
@@ -181,7 +180,7 @@ const Mainpage = () => {
                           <Popup
                             trigger={
                               <button
-                                onClick={() => getInputValue(index)}
+                                onClick={({}) => getInputValue(index)}
                                 id="ConfirmButton"
                                 className="button-54"
                               >
@@ -190,15 +189,19 @@ const Mainpage = () => {
                             }
                             modal
                             nested
+                            onOpen={() => getInputValue(index)}
                           >
                             {(close) => (
                               <div id="modal2" className="modal">
                                 <div className="content">
                                   <p className="text2">
-                                    OOOLA LA! YOUR EVENT TICKET IS CONFIRMED.
-                                  </p>
+                                    {" "}
+                                    CONGRATULATIONS!!! YOU EVENT TICKET IS
+                                    CONFIRMED.{" "}
+                                  </p>{" "}
+                                  <b></b>
                                   <p className="text2">
-                                    THE TICKET WILL BE MAILED TO YOUR GMAIL.
+                                    THE TICKET WILL BE MAILLED TO YOUR GMAIL.
                                   </p>
                                 </div>
                                 <div>
@@ -217,7 +220,6 @@ const Mainpage = () => {
                           <button
                             id="closeButton"
                             className="button-54"
-                            style={{ marginLeft: "250px" }}
                             onClick={() => close()}
                           >
                             Close
@@ -232,9 +234,26 @@ const Mainpage = () => {
           </div>
         </div>
 
-        <button onClick={handleExportJSON} className="export-btn">
-          Export JSON
-        </button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   );
